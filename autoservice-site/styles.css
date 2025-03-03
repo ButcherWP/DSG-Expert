@@ -1,0 +1,322 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Шапка сайта */
+header {
+  background: #1f2937;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-menu li {
+  margin-left: 25px;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #f97316;
+}
+
+/* Секция преимущества */
+.advantages {
+  padding: 90px 0;
+  text-align: center;
+}
+
+.advantages .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.adv {
+  width: 300px;
+}
+
+/* Секция контактов */
+.contacts-section {
+  background-color: #1f2937;
+  color: #ffffff;
+  padding: 60px 0;
+}
+
+.contacts-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-info h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #f97316;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  margin-bottom: 12px;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #f97316;
+}
+
+.contact-map {
+  flex: 1;
+  min-width: 280px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Футер сайта */
+footer {
+  text-align: center;
+  background: #111;
+  color: #ccc;
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* Страница с услугами */
+.services-page {
+  padding: 80px 0;
+}
+
+.services-page h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 38px;
+  color: #1f2937;
+}
+
+.service-item {
+  background-color: #f9fafb;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.service-item h3 {
+  color: #f97316;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: #1f2937;
+}
+
+/* Кнопка CTA */
+.cta-button {
+  display: block;
+  width: fit-content;
+  margin: 40px auto 0;
+  padding: 14px 30px;
+  text-decoration: none;
+  color: white;
+  background-color: #f97316;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+/* Секция "Как заехать?" */
+.howto-section {
+  padding: 80px 0;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.howto-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #1f2937;
+}
+
+.howto-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.howto-step {
+  flex: 1;
+  min-width: 280px;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.howto-step:hover {
+  transform: translateY(-5px);
+}
+
+.step-number {
+  display: inline-block;
+  font-weight: bold;
+  background-color: #f97316;
+  color: #fff;
+  font-size: 24px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.howto-step h3 {
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.howto-step p {
+  color: #4b5563;
+}
+
+/* Секция Отзывы */
+#reviews {
+  display: flex;
+  padding: 80px 0;
+  text-align: center;
+}
+
+#reviews h2 {
+  font-size: 36px;
+  color: #1f2937;
+  margin-bottom: 30px;
+}
+
+#reviews iframe {
+  border: 2px solid #1f2937;
+  border-radius: 8px;
+  width: 100%;
+  height: 800px;
+  max-width: 750px;
+}
+
+/* Секция Ремонт и обслуживание роботизированных коробок передач */
+#main-service {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #f9fafb;
+}
+
+#main-service h1 {
+  font-size: 36px;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+#main-service p {
+  font-size: 18px;
+  color: #4b5563;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.cta-button {
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #ffae00;
+}
+
+/* Мобильная адаптивность сайта */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .adv,
+  .contact-info,
+  .contact-map {
+    width: 100%;
+  }
+  .contacts-container {
+    flex-direction: column;
+  }
+}
